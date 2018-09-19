@@ -1,0 +1,20 @@
+<%= form_for(:shop, url:{:action=>'create'}) do |f| %>
+<div class='field'>
+<%= f.label :Name %>
+<%= f.text_field :name %>
+</div>
+<div class="field">
+<%=f.label :image %>
+<%=f.file_field :image%>
+<div class='field'>
+<%= f.label :Price %>
+<%= f.text_field :price %>
+</div>
+<div class='field'>
+<%= f.label :Active %>
+<%= f.text_field :active %>
+</div>
+<div class='form_buttons'>
+<%= submit_tag 'create' %>
+</div>
+<%end%>

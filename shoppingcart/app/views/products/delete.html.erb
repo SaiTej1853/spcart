@@ -1,0 +1,6 @@
+<%= form_for(:shop, :url=>{:action=>'destroy', :id=>@shop.id}) do |f|%>
+<p> Are you sure you want to delete post</p>
+<div class="form_buttons">
+<%=f.submit('Delete post')%>
+</div>
+<%end%>
